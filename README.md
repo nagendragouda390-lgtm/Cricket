@@ -15,7 +15,7 @@ This project simulates a 20 over cricket match with random ball-by-ball outcomes
 import random
 
 # 20 Over Cricket Match Simulation
-def simulate_cricket_match():
+def simulate_cricket_match(team):
     total_runs = 0
     wickets = 0
     balls_played = 0
@@ -23,7 +23,9 @@ def simulate_cricket_match():
     
     for i in range(total_balls):
         # Random outcome for each ball
-        outcome = random.randint(0, 6)
+        ch = [0,1,2,3,4,6,'w']
+        prob = [0.4,0.4,0.2,0.01,0.1,0.09,0.01]
+        outcome = random.choices(ch,prob)[0]
         
         if outcome == 0:
             # Dot ball
@@ -44,21 +46,22 @@ def simulate_cricket_match():
             # Four runs
             total_runs += 4
             balls_played += 1
-        elif outcome == 5:
+        elif outcome == 6:
             # Six runs
             total_runs += 6
             balls_played += 1
-        elif outcome == 6:
+        elif outcome == 'w':
             # Wicket
             wickets += 1
             balls_played += 1
             if wickets == 10:
                 break
     
-    print(f"Final Score: {total_runs}/{wickets}")
+    print(f"{team}\nFinal Score: {total_runs}/{wickets}")
     print(f"Balls Played: {balls_played}")
 
-simulate_cricket_match()
+first = simulate_cricket_match('srilanka')
+second = simulate_cricket_match('england')
 ```
 
 ## Usage
