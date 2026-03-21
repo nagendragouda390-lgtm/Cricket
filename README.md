@@ -56,12 +56,18 @@ def simulate_cricket_match(team):
             balls_played += 1
             if wickets == 10:
                 break
+    return total_runs
     
     print(f"{team}\nFinal Score: {total_runs}/{wickets}")
     print(f"Balls Played: {balls_played}")
 
 first = simulate_cricket_match('srilanka')
 second = simulate_cricket_match('england')
+
+if first > second:
+    print('SRI LANKA won the match by ',first - second,' runs')
+else :
+    print('England won ')
 ```
 
 ## Usage
