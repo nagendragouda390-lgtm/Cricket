@@ -10,12 +10,6 @@ This project simulates a 20 over cricket match with random ball-by-ball outcomes
 - 20 over format
 - Match statistics and scorecard
 
-## Code
-```python
-import random
-
-# 20 Over Cricket Match Simulation
-
 
 ## Usage
 Run the script to simulate a 20 over cricket match with random ball-by-ball outcomes.
