@@ -3,8 +3,8 @@ import random
 team1 = ' England '
 team2 = ' Australia '
 
-ch = [0,1,2,3,4,6,'wd','b','lb',nd','w']
-prob = [0.4,0.5,0.2,0.01,0.1,0.09,0.05,0.01,0.01,0.03,0.01]
+ch = [0,1,2,3,4,6,'wd','b','lb','nb','w']
+prob = [0.4,0.5,0.2,0.01,0.1,0.09,0.05,0.01,0.01,0.03,0.04]
 
 ball1 = 0
 team1_run = 0
@@ -17,7 +17,7 @@ while ball1 < 120:
     elif run1 == 'wd' or run1 == 'nb' or run1 == 'b' or run1 == 'lb':
         team1_run += 1
     else:
-        ball2 += 1
+        ball1 += 1
         team1_run += run1
     # To stop innings after allout
     if team1_wicket == 10:
