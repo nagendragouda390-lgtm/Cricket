@@ -2,7 +2,7 @@
 
 A Python-based T20 cricket match simulator that generates realistic ball-by-ball commentary and match statistics.
 
-## Overview
+## Overviews
 This project simulates a complete T20 cricket match between England and Australia with random ball-by-ball outcomes. It provides detailed commentary, individual batsman statistics, and match results.
 
 ## Features
